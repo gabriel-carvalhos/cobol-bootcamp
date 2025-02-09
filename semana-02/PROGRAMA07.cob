@@ -1,5 +1,5 @@
        IDENTIFICATION DIVISION.
-       PROGRAM-ID. PROGRAMAXX.
+       PROGRAM-ID. PROGRAMA07.
       *=================================================================
       *==  AUTOR: Gabriel           EMPRESA: XPTO
       *==  OBJETIVO: VARIAVEL ESTRUTURAL (GRUPO)
