@@ -1,4 +1,7 @@
-*.exe
+# Ignorando arquivos compilados sem extensão
 *
 !/**/
 !*.*
+
+# Ignorando arquivos compilados em .exe
+*.exe
