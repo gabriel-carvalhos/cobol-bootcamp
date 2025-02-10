@@ -6,6 +6,10 @@
       *==  DATA: 09/02/2025
       *==  OBSERVACOES:
       *=================================================================
+ALT01 *==  ALTERACOES
+  .   *==  REMONTEI LOGICA DOS APROVADOS
+  .   *==  AUTOR: GABRIEL                  EMPRESA: TOXP
+ALT01 *=================================================================    
        ENVIRONMENT           DIVISION.
        CONFIGURATION         SECTION.
        SPECIAL-NAMES.
@@ -13,12 +17,16 @@
 
        DATA DIVISION.
        WORKING-STORAGE       SECTION.
+ALT01  77  WRK-NIVEL       PIC X(10)  VALUE SPACES.
+ALT01  77  WRK-CORTE       PIC 99     VALUE ZEROS.
        77  WRK-NOTA1       PIC 99V99  VALUE ZEROS.
        77  WRK-NOTA2       PIC 99V99  VALUE ZEROS.
        77  WRK-MEDIA       PIC 99V99  VALUE ZEROS.
 
        PROCEDURE             DIVISION.
        0100-RECEBE           SECTION.
+ALT01      DISPLAY "NIVEL (FUND/MEDIO): ".
+ALT01      ACCEPT WRK-NIVEL.
            DISPLAY "NOTA 1: ".
            ACCEPT WRK-NOTA1.
            DISPLAY "NOTA 2: ".
@@ -29,10 +37,16 @@
 
        0200-MOSTRA           SECTION.
            DISPLAY "MEDIA " WRK-MEDIA.
-
-           IF WRK-MEDIA GREATER 7
-               DISPLAY "APROVADO"
-           ELSE IF WRK-MEDIA GREATER 2
+           
+ALT01      IF WRK-NIVEL(01:04) EQUAL "FUND"
+  .            MOVE 6 TO WRK-CORTE
+  .        ELSE
+  .            MOVE 7 TO WRK-CORTE
+  .        END-IF.
+  .      
+  .        IF WRK-MEDIA GREATER THAN OR EQUAL WRK-CORTE
+  .            DISPLAY "APROVADO"
+ALT01      ELSE IF WRK-MEDIA GREATER THAN OR EQUAL 2
                DISPLAY "RECUPERACAO"
            ELSE
                DISPLAY "REPROVADO"
