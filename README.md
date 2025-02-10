@@ -4,14 +4,14 @@ Programas feitos no Bootcamp da Código de Base, com intuito de desenvolver as h
 
 # Indíce
 
-- Semana 1: Estrutura de Arquivos COBOL, Varíaveis, Tipos de dados e Máscaras de Edição
-- Semana 2: Varíaveis de Grupo, Operadores Aritméticos, Estruturas Condicionais, Operadores Lógicos
+- Semana 1: Estrutura de Arquivos COBOL, Varíaveis, Tipos de dados e Máscaras de Edição.
+- Semana 2: Varíaveis de Grupo, Operadores Aritméticos, Estruturas Condicionais, Operadores Lógicos.
 
 # Uso
 
 ## Pré-Requisitos
 
-- Cobol instalado na máquina
+- Cobol instalado na máquina.
 
 ## Utilização
 
@@ -23,13 +23,13 @@ Para utilizar e testar esse arquivos, é necessário fazer a compilação deles,
     cd <SEMANA>
     ```
 
-2. Compile o arquivo
+2. Compile o arquivo:
 
     ```
     cobc -x <ARQUIVO>.cob
     ```
 
-3. Execute o arquivo compilado
+3. Execute o arquivo compilado:
 
     ```
     ./<ARQUIVO_COMPILADO>
