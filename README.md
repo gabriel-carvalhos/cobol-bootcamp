@@ -6,6 +6,7 @@ Programas feitos no Bootcamp da Código de Base, com intuito de desenvolver as h
 
 - Semana 1: Estrutura de Arquivos COBOL, Varíaveis, Tipos de dados e Máscaras de Edição.
 - Semana 2: Varíaveis de Grupo, Operadores Aritméticos, Estruturas Condicionais, Operadores Lógicos.
+- Semana 3: Comando Perform, Estruturas de Repetição com Times e Varying.
 
 # Uso
 
@@ -15,7 +16,7 @@ Programas feitos no Bootcamp da Código de Base, com intuito de desenvolver as h
 
 ## Utilização
 
-Para utilizar e testar esse arquivos, é necessário fazer a compilação deles, utilizando os seguintes comandos:
+Para utilizar e testar esses arquivos, é necessário fazer a compilação deles, utilizando os seguintes comandos:
 
 1. Vá para o diretório da semana desejada:
 
