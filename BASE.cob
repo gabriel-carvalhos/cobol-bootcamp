@@ -16,9 +16,12 @@
 
 
        PROCEDURE             DIVISION.
-       0100-RECEBE           SECTION.
+       0001-PRINCIPAL        SECTION.
+           STOP RUN.
+           
+       0100-INICIALIZAR      SECTION.
 
-       0200-MOSTRA           SECTION.
+       0200-PROCESSAR        SECTION.
 
        0300-FINALIZAR        SECTION.
-           STOP RUN.
+           
