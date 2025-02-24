@@ -3,6 +3,7 @@
 !/**/
 !*.*
 
-# Ignorando arquivos compilados em .exe e .dll
+# Ignorando arquivos compilados em .exe, .dll, .so
 *.exe
 *.dll
+*.so
