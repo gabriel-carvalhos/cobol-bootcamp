@@ -7,6 +7,7 @@ Programas feitos no Bootcamp da Código de Base, com intuito de desenvolver as h
 - Semana 1: Estrutura de Arquivos COBOL, Varíaveis, Tipos de dados e Máscaras de Edição.
 - Semana 2: Varíaveis de Grupo, Operadores Aritméticos, Estruturas Condicionais, Operadores Lógicos.
 - Semana 3: Comando Perform, Estruturas de Repetição com Times e Varying.
+- Semana 4: Vetores, Módulos e Copybooks.
 
 # Uso
 
@@ -26,9 +27,17 @@ Para utilizar e testar esses arquivos, é necessário fazer a compilação deles
 
 2. Compile o arquivo:
 
-    ```
-    cobc -x <ARQUIVO>.cob
-    ```
+    - Caso o arquivo seja um executável, passe a flag '-x'
+    
+        ```
+        cobc -x <ARQUIVO>.cob
+        ```
+
+    - Caso o arquivo seja um módulo, passe a flag '-m'
+    
+        ```
+        cobc -m <MODULO>.cob
+        ```
 
 3. Execute o arquivo compilado:
 
