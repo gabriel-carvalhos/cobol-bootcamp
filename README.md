@@ -8,6 +8,7 @@ Programas feitos no Bootcamp da Código de Base, com intuito de desenvolver as h
 - Semana 2: Varíaveis de Grupo, Operadores Aritméticos, Estruturas Condicionais, Operadores Lógicos.
 - Semana 3: Comando Perform, Estruturas de Repetição com Times e Varying.
 - Semana 4: Vetores, Módulos e Copybooks.
+- Semana 5: Leitura de Arquivos
 
 # Uso
 
