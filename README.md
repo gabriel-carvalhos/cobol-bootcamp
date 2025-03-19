@@ -10,6 +10,7 @@ Programas feitos no Bootcamp da Código de Base, com intuito de desenvolver as h
 - Semana 4: Vetores, Módulos e Copybooks.
 - Semana 5: Leitura de Arquivos.
 - Semana 6: Gravação e Localização de Registros em Arquivos.
+- Semana 7: Estatísticas e Append em Arquivos.
 
 # Uso
 
