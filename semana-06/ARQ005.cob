@@ -32,6 +32,10 @@
        77  WRK-ID               PIC 9(004) VALUE ZEROS.
        77  FS-CLIENTES          PIC 9(002) VALUE ZEROS.
        77  WRK-MSG-ERRO         PIC X(030) VALUE SPACES.
+      
+      *=== ACUMULADORES
+       77  WRK-ACUM-LIDOS       PIC 9(004) VALUE ZEROS.
+       77  WRK-ACUM-ACHADOS     PIC 9(004) VALUE ZEROS.
 
        PROCEDURE             DIVISION.
        0001-PRINCIPAL        SECTION.
@@ -59,13 +63,13 @@
            READ CLIENTES.
            IF FS-CLIENTES EQUAL 0
                PERFORM UNTIL FS-CLIENTES NOT EQUAL 00
+                   ADD 1 TO WRK-ACUM-LIDOS
                    IF REG-ID EQUAL WRK-ID
                        DISPLAY "ID.......... " REG-ID
                        DISPLAY "NOME........ " REG-NOME
                        DISPLAY "TELEFONE.... " REG-TELEFONE
-                       
-                       CLOSE CLIENTES
-                       GOBACK
+                       DISPLAY "=========================="
+                       ADD 1 TO WRK-ACUM-ACHADOS
                    END-IF
                    READ CLIENTES
                END-PERFORM
@@ -75,9 +79,14 @@
            
 
        0300-FINALIZAR        SECTION.
-           DISPLAY "FIM DE PROGRAMA".
       *=== FECHA O ARQUIVO
            CLOSE CLIENTES.
+           PERFORM 0310-ESTATISTICA.
+           DISPLAY "FIM DE PROGRAMA".
+
+       0310-ESTATISTICA      SECTION.
+           DISPLAY "REGISTROS LIDOS.... " WRK-ACUM-LIDOS.
+           DISPLAY "REGISTROS ACHADOS.. " WRK-ACUM-ACHADOS.
        
        9000-TRATA-ERRO       SECTION.
            DISPLAY WRK-MSG-ERRO.
